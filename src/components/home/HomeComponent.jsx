@@ -1,7 +1,7 @@
 export default function HomeComponent() {
     return (
       <>
-        <div>Home Component</div>
+        <div>Bienvenido a Motohouse</div>
       </>
     );
   }
