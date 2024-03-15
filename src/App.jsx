@@ -1,32 +1,31 @@
-/* eslint-disable no-unused-vars */
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ButtonComponnent from './Components/ButtonComponnent.jsx';
-import NavBar from './Components/Navbar.jsx';
 import './App.css';
-import { useState } from "react";
-import Item from './Components/Item.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomeComponent from './components/home/HomeComponent';
+import ProductsComponent from './components/products/ProductsComponent';
+import ContactComponent from './components/contact/ContactComponent';
+import NavBar from './components/navigation/NavBar';
+import SingleProduct from './components/product/SingleProduct';
+import CategoryComponent from './components/categories/CategoryComponent';
 
 function App() {
-
-  const [showMenu, setShowMenu] = useState(true);
-  
-    const toggleMenu = ()=>{
-      setShowMenu((isShown) => !isShown);
-  } 
-
   return (
     <>
-      <NavBar />
-
-      <h1 className='titulo'>Bienvenido</h1>
-
-      <Item />
-      <ButtonComponnent stock={10} isDisabled={showMenu} />
-      <button className='boton' onClick={toggleMenu}>Elegir cantidad</button>
-      
-    </> 
-  )
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<HomeComponent />} />
+          <Route exact path="/products" element={<ProductsComponent />} />
+          <Route exact path="/product/:prodId" element={<SingleProduct />} />
+          <Route
+            exact
+            path="/category/:catName"
+            element={<CategoryComponent />}
+          />
+          <Route exact path="/contact" element={<ContactComponent />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
