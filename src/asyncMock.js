@@ -6,7 +6,7 @@ const products = [
       category: 'deportivas',
       description: 'Cilindrada: Alta, Ruta',
       image:
-        'https://www.formulamoto.es/wp-content/uploads/2021/10/hi_22MY_Ninja_650_WT1_STU__1_-150x150.jpg',
+        'https://kawasakicapital.com.mx/cdn/shop/files/ninja400_abs_krt3_300x300.jpg?v=1699056034',
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const products = [
       category: 'Trial',
       description: 'Cilindrada: Media, Viaje',
       image:
-        'https://s3.eu-west-1.amazonaws.com/cdn.motorbikemag.es/wp-content/uploads/2022/12/KTM-1290-Super-Adventure-S-2023-colores-2-150x150.jpg',
+        'https://www.repuestos-ktm.es/thumbs/ktm/ident_photos/300_300/F5303V6_KTM_Adventure_390_2022.jpg',
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const products = [
       category: 'Naked',
       description: 'Cilindrada: Baja, Ciudad',
       image:
-        'https://www.hengmotor.com//image/cache/catalog/slicing/New%20Bikes/Yamaha/YZF%20R1/Yamaha%20Blue-150x150.jpg',
+        'https://motosfast.com/cdn/shop/files/MT07_2022_04_2b6aec86-1018-45ee-8c59-33293592e710_300x.jpg?v=1708004616',
     },
   ];
   

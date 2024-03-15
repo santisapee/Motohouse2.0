@@ -35,6 +35,36 @@ h1 {
   line-height: 1.1;
 }
 
+
+section.marcas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.kawalogo img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.yamalogo img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.ktmlogo img {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+}
+.bmwlogo img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
