@@ -16,11 +16,7 @@ function App() {
           <Route exact path="/" element={<HomeComponent />} />
           <Route exact path="/products" element={<ProductsComponent />} />
           <Route exact path="/product/:prodId" element={<SingleProduct />} />
-          <Route
-            exact
-            path="/category/:catName"
-            element={<CategoryComponent />}
-          />
+          <Route exact ath="/category/:catId"element={<CategoryComponent />} />
           <Route exact path="/contact" element={<ContactComponent />} />
         </Routes>
       </BrowserRouter>

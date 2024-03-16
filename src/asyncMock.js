@@ -3,7 +3,7 @@ const products = [
       id: 1,
       title: 'Kawasaki Ninja',
       price: '10000',
-      category: 'deportivas',
+      category: 'deportiva',
       description: 'Cilindrada: Alta, Ruta',
       image:
         'https://kawasakicapital.com.mx/cdn/shop/files/ninja400_abs_krt3_300x300.jpg?v=1699056034',
@@ -12,7 +12,7 @@ const products = [
       id: 2,
       title: 'Ktm Adventure',
       price: '12000',
-      category: 'Trial',
+      category: 'trial',
       description: 'Cilindrada: Media, Viaje',
       image:
         'https://www.repuestos-ktm.es/thumbs/ktm/ident_photos/300_300/F5303V6_KTM_Adventure_390_2022.jpg',
@@ -21,7 +21,7 @@ const products = [
       id: 3,
       title: 'Yamaha',
       price: '5000',
-      category: 'Naked',
+      category: 'naked',
       description: 'Cilindrada: Baja, Ciudad',
       image:
         'https://motosfast.com/cdn/shop/files/MT07_2022_04_2b6aec86-1018-45ee-8c59-33293592e710_300x.jpg?v=1708004616',

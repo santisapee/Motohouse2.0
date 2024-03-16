@@ -11,7 +11,19 @@ export default function NavBar() {
           <Link to={'/products'}>Products</Link>
         </button>
         <button>
-          <Link to={'/contact'}>Contact</Link>
+          <Link to={'/categories'}>Marcas</Link>
+        </button>
+        <button>
+          <Link to={'/categories/deportiva'}>Deportiva</Link>
+        </button>
+        <button>
+          <Link to={'/categories/trial'}>Trial</Link>
+        </button>
+        <button>
+          <Link to={'/categories/naked'}>Naked</Link>
+        </button>
+        <button>
+          <Link to={'/contact'}>Contacto</Link>
         </button>
       </div>
     </>
