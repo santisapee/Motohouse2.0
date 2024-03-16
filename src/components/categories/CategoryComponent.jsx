@@ -3,28 +3,25 @@ import { getProducts } from '../../asyncMock';
 import { useEffect, useState } from 'react';
 
 export default function CategoryComponent() {
-  const { catId } = useParams();
-
   const [products, setProducts] = useState([]);
 
+  const { catId } = useParams();
+
   useEffect(() => {
-    getProducts().then((res) => {
-      if (catId) {
-        setProducts(res.filter((prod) => prod.category === catId));
-      } else {
-        setProducts(res);
-      }
-    });
-  }, [catId]);
+    const asyncFunc = catId ? products : getProducts
+
+    asyncFunc(catId)
+    .then(Response => {
+      setProducts(Response)
+    })
+    .catch(error => {
+      console.error(error)
+    })
+  }, [catId])
 
   return (
     <>
       <div>Category Component {catId}</div>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>{product.title}</li>
-        ))}
-      </ul>
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { getProducts } from '../../asyncMock';
 import { useEffect, useState } from 'react';
+import './ProductsComponent.css';
 
 export default function ProductsComponent() {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export default function ProductsComponent() {
 
     return (
       <>
-      <div>
+      <div style={{ display: 'grid', justifyItems: 'center', gap: 10 }}>
         <h1>Los destacados</h1>
         <section style={{ display: 'flex', gap: 10 }}>
           {products.map((product) => (
