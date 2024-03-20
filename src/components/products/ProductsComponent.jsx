@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { getProducts } from '../../asyncMock';
 import { useEffect, useState } from 'react';
 import './ProductsComponent.css';
+import { left } from '@popperjs/core';
 
 export default function ProductsComponent() {
   const navigate = useNavigate();
@@ -18,9 +19,9 @@ export default function ProductsComponent() {
 
     return (
       <>
-      <div style={{ display: 'grid', justifyItems: 'center', gap: 10 }}>
+      <div style={{ display: 'grid', justifyItems: 'center', width: '100%' , gap: 10 }}>
         <h1>Los destacados</h1>
-        <section style={{ display: 'flex', gap: 10 }}>
+        <section style={{display: 'flex' , width: '100%' , height: '100px' }}>
           {products.map((product) => (
             <article
               key={product.id}

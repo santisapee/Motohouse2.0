@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomeComponent from './components/home/HomeComponent';
+import HomeComponent from './components/home/ItemListContainer';
 import ProductsComponent from './components/products/ProductsComponent';
 import ContactComponent from './components/contact/ContactComponent';
 import NavBar from './components/navigation/NavBar';
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/" element={<HomeComponent />} />
           <Route exact path="/products" element={<ProductsComponent />} />
           <Route exact path="/product/:prodId" element={<SingleProduct />} />
-          <Route exact ath="/category/:catId"element={<CategoryComponent />} />
+          <Route exact ath="/categories" element={<CategoryComponent />} />
           <Route exact path="/contact" element={<ContactComponent />} />
         </Routes>
       </BrowserRouter>

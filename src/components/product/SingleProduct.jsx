@@ -25,10 +25,13 @@ export default function SingleProduct() {
         <h3>{product.title}</h3>
         <img src={product.image} alt={product.title} />
         <p>{product.description}</p>
-        <p>{product.category}</p>
+        <p>{product.categories}</p>
         <p>Precio $ {product.price}</p>
         <ButtonComponnent stock={10} isDisabled={showMenu} />
         <button onClick={toggleMenu}>Elegir cantidad</button>
+        <button>
+          Agregar al Carrito
+        </button>
       </div>
     </>
   );
