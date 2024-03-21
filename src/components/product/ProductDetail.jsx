@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 import { getProduct } from '../../asyncMock';
 import ButtonComponnent from '../ButtonComponnent';
 
-export default function SingleProduct({product}) {
-  // const { prodId } = useParams();
+export default function ProductDetail() {
+  const { prodId } = useParams();
 
-  // const [product, setProduct] = useState({});
+  const [product, setProduct] = useState({});
 
-  // useEffect(() => {
-  //   setProduct(getProduct(prodId));
-  // }, [prodId]);
+  useEffect(() => {
+    setProduct(getProduct(prodId));
+  }, [prodId]);
 
   const [showMenu, setShowMenu] = useState(true);
 

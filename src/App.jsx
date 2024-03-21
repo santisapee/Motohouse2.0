@@ -4,12 +4,11 @@ import HomeComponent from './components/home/ItemListContainer';
 import ProductsComponent from './components/products/ProductsComponent';
 import ContactComponent from './components/contact/ContactComponent';
 import NavBar from './components/navigation/NavBar';
-import SingleProduct from './components/product/SingleProduct';
 import CategoryComponent from './components/categories/CategoryComponent';
+import ProductDetail from './components/product/ProductDetail';
 
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
@@ -17,8 +16,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomeComponent />} />
           <Route exact path="/products" element={<ProductsComponent />} />
-          <Route exact path="/product/:prodId" element={<SingleProduct />} />
-          <Route exact ath="/categories" element={<CategoryComponent />} />
+          <Route exact path="/product/:prodId" element={<ProductDetail />} />
+          <Route exact path="/categories/:categories" element={<CategoryComponent />} />
           <Route exact path="/contact" element={<ContactComponent />} />
         </Routes>
       </BrowserRouter>

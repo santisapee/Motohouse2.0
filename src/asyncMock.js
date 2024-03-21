@@ -3,7 +3,7 @@ const products = [
       id: 1,
       title: 'Kawasaki Ninja',
       price: '10000',
-      categories: 'calle, pista',
+      categories: 'deportiva',
       description: 'Cilindrada: 400cc',
       image:
         'https://aws.kawasaki-la-administration.com//ContentStorage/KLA/ProductTrimGroup/2017/2843a57e-27d0-42e2-9a2d-dd7619c2badc.png?w=300',

@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { getProductsByCategory } from '../../asyncMock';
 import { useEffect, useState } from 'react';
+import SingleProduct from '../product/SingleProduct';
 
 export default function CategoriesComponent() {
   const [products, setProducts] = useState([]);
@@ -22,9 +23,9 @@ export default function CategoriesComponent() {
   return (
     <>
       <h1>Productos: {categories}</h1>
-      <ul>
+      <ul style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent:'center',  gap: '10px'}}>
         {products.map(product => (
-          <li key={product.id}>{product.name}</li>
+          <SingleProduct key={product.id} product={product} />
         ))}
       </ul>
     </>

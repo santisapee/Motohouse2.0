@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
   return (
     <>
-      <div style={{ marginBottom: 30, display: 'flex', gap: 10, color: 'white' }}>
+      <div style={{ marginBottom: 30, display: 'flex', flexWrap:'wrap', justifyContent:'center', gap: 10, color: 'white' }}>
         <button>
           <Link to={'/'}>Home</Link>
         </button>
