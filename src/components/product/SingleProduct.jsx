@@ -4,13 +4,6 @@ import { getProduct } from '../../asyncMock';
 import ButtonComponnent from '../ButtonComponnent';
 
 export default function SingleProduct({product}) {
-  // const { prodId } = useParams();
-
-  // const [product, setProduct] = useState({});
-
-  // useEffect(() => {
-  //   setProduct(getProduct(prodId));
-  // }, [prodId]);
 
   const [showMenu, setShowMenu] = useState(true);
 
@@ -21,7 +14,6 @@ export default function SingleProduct({product}) {
   return (
     <>
       <div>
-        {/* <h1>{product.id}</h1> */}
         <h3>{product.title}</h3>
         <img src={product.image} alt={product.title} />
         <p>{product.description}</p>
@@ -36,4 +28,3 @@ export default function SingleProduct({product}) {
     </>
   );
 }
-
