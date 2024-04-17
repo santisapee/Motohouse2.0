@@ -6,6 +6,7 @@ export default function Cart() {
   const {
     carrito,
     vaciarCarrito,
+    checkOut,
     precioTotal,
     deleteProduct,
     restarProduct,
@@ -36,6 +37,7 @@ export default function Cart() {
         </ul>
         <p>Total: {precioTotal}</p>
         <button onClick={vaciarCarrito}>Vaciar Carrito</button>
+        <button onClick={checkOut}>Pagar</button>
       </div>
     </>
   );

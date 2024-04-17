@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomeComponent />} />
             <Route exact path="/products" element={<ProductsComponent />} />
-            <Route exact path="/product/:prodId" element={<ProductDetail />} />
+            <Route exact path="/product/:categories" element={<ProductDetail />} />
             <Route
               exact
               path="/categories/:categories"

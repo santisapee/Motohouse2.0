@@ -1,6 +1,4 @@
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { getProduct } from "../../asyncMock";
+import { useState } from "react";
 import ButtonComponnent from "../ButtonComponnent";
 import { CartContext } from "../../context/CartContext";
 import { useContext } from "react";

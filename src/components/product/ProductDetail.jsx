@@ -25,7 +25,7 @@ export default function CategoriesComponent() {
       <h1>Productos: {categories}</h1>
       <ul style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent:'center',  gap: '10px'}}>
         {products.map(product => (
-          <SingleProduct key={product.id} product={product} />
+          <SingleProduct key={product.id}/>
         ))}
       </ul>
     </>

@@ -24,11 +24,16 @@ export function CartProvider({ children }) {
     );
     setCarrito(updatedData);
   };
+
   const sumarProduct = (id, amount) => {
     const updatedData = carrito.map((obj) =>
       obj.id === id ? { ...obj, amount: amount + 1 } : obj
     );
     setCarrito(updatedData);
+  };
+
+  const checkOut = () => {
+    console.log("proximamente activare el pago");
   };
 
   return (
@@ -42,6 +47,7 @@ export function CartProvider({ children }) {
         deleteProduct,
         restarProduct,
         sumarProduct,
+        checkOut,
       }}
     >
       {children}
